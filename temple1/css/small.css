@@ -1,0 +1,81 @@
+* { -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: Verdana;
+    font-size: 16px;
+}
+
+/* header rules here */
+header {
+    background-color: rgba(34, 139, 34, 0.295);
+    padding: 1rem 2%;
+}
+header h1 {
+    color: forestgreen;
+    margin: 0;
+}
+header h3 {
+    color: forestgreen;
+    margin: 0;
+}
+
+
+/* Navigation rules here */
+nav {background-color: forestgreen}
+nav ul {margin: 0; padding: 0;}
+nav li {list-style-type: none;}
+nav li.active {background-color: rgb(131, 196, 133);}
+nav a {
+    display: block;
+    padding: .8rem 0; /* 44 min height */
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {background-color: rgb(60, 112, 62);}
+
+/* main rules here */
+main {
+    padding: 1rem 2%;
+    display: block;
+}
+main h1 {color: forestgreen;}
+main h2 {color: rgb(69, 114, 71);}
+main h4 {color: rgb(69, 114, 71)}
+
+main figure img {width: 100%;}
+main figure {
+    width: 100%;
+    margin: 0;
+}
+main figcaption {text-align: center; font-size: .8rem;}
+
+div.news {
+    clear: both;
+    column-count: 2;
+    column-rule: 1px solid #ddd;
+}
+
+main a.ref {
+    display: block;
+    padding: .8rem 0;
+    margin:0;
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 2%;
+    background-color: rgba(34, 139, 34, 0.295);
+    color: black;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
