@@ -20,9 +20,14 @@ header h2 {font-size: 1.5rem;}
 
 
 /*----------- MAIN --------------*/
-
+main figure.myphoto {
+    width: 50%;
+  }
 
 
 /*----------- FOOTER --------------*/
-    
+    footer {
+        clear: both;
+        position: relative;
+    }
 } /* end of media query */
