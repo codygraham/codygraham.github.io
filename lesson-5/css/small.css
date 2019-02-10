@@ -1,0 +1,122 @@
+* { -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: Verdana;
+    font-size: 16px;
+}
+
+/* header rules here */
+header {
+    background-color: #d1af82c0;
+    padding: 1rem 2%;
+}
+header h1 {
+    color: black;
+    margin: 0;
+}
+header h2 {
+    color: black;
+    margin: 0;
+    font-weight: 100;
+    padding-left: 70px;
+}
+
+header figure img {
+    float: left;
+    width: 100px;
+    margin-left: -50px;
+
+}
+
+/* Navigation rules here */
+nav {background-color: #DEB887;}
+nav ul {margin: 0; padding: 0;}
+nav li {list-style-type: none;}
+nav li.active {background-color: #5f9ea0d2;}
+
+nav a {
+    display: block;
+    padding: .8rem 0; /* 44 min height */
+    color: #000000;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+nav a:hover {background-color: #b99a71;}
+
+/* main rules here */
+main {
+    padding: 1rem 2%;
+    display: block;
+}
+main h1 {color: #5F9EA0;}
+main h2 {color: #395c5e;}
+
+img.hero {
+    width: 100%;
+    margin: 0;
+    clear: none;
+}
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+.stats {
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	background: radial-gradient(#eee, #4567aa;);
+	border: 1px solid #000;
+	padding: 1.5rem;
+    box-shadow: 0 0 30px #fff;
+    display: none;
+}
+
+section {display: none;}
+
+img.history {
+    width: 100%;
+    border-radius: 3%;
+}
+main figure {margin: 0;}
+
+main figcaption {text-align: center; font-size: .8rem;}
+
+article {
+    clear: both;
+    column-count: 1;
+    column-rule: 1px solid #ddd;
+}
+
+main a.ref {
+    display: block;
+    padding: .8rem 0;
+    margin:0;
+    list-style-type: none;
+}
+
+footer.info {
+    text-align: left;
+    padding: 1rem 2%;
+    background-color: #DEB887;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 2%;
+    background-color: #d1af82c0;
+    color: black;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
