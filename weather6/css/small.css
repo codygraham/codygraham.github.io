@@ -32,8 +32,29 @@ header figure img {
 
 /* Navigation rules here */
 nav {background-color: #DEB887;}
-nav ul {margin: 0; padding: 0;}
-nav li {list-style-type: none;}
+
+nav button {
+    margin: .2rem 2%;
+    border: none;
+    font-size: 1.6rem;
+    background-color: #b99c75c0;
+}
+
+nav button:hover {
+    background-color: #9e8565c0;
+}
+
+nav ul {
+    margin: 0;    
+    padding: 0;
+}
+
+nav ul.hide {display: none;}
+
+nav li {
+    list-style-type: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
 nav li.active {background-color: #5f9ea0d2;}
 
 nav a {
