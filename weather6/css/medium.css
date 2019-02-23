@@ -9,7 +9,10 @@ nav li {
 nav a {
     padding-top: .5rem;
     padding-bottom: .5rem;
+    display: block;
 }
+
+nav button {display: none;}
 
 .stats {display: block;}
 
