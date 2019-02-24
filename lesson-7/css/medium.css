@@ -1,0 +1,55 @@
+@media only screen and (min-width: 560px) {
+
+nav li {
+    float: left;
+    width: auto;
+    margin-right: 2px;
+}
+
+nav a {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    display: block;
+}
+
+nav button {display: none;}
+
+.stats {display: block;}
+
+section {display: block;}
+
+table {width: 59%; border: 1px solid black;}
+
+th {
+    text-align: left;
+    padding: .3rem;
+    background-color: #395c5e4f;
+}
+
+tr {margin-bottom: 10px;}
+
+td {padding-right: .5rem;}
+
+article figure img.history {
+    float: right;
+    width: 40%;
+    margin: 10px;
+}
+
+main article {clear: both;}
+
+.pics {
+    display: flex 
+}
+
+footer.info {
+    column-count: 2;
+    margin-top: 0px;
+    vertical-align:top;
+    height: 170px;
+}
+
+footer.final {clear: both;}
+
+} 
+/* end of media query*/
