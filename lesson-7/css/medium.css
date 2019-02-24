@@ -39,7 +39,7 @@ article figure img.history {
 main article {clear: both;}
 
 .pics {
-    display: flex 
+    display: flex 300px 300px;
 }
 
 footer.info {
