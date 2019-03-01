@@ -1,0 +1,65 @@
+table.sales {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    border: 1px solid #55555552;
+    margin: 0;
+    padding:0;
+    border-collapse: collapse;
+    box-shadow: 8px 8px 20px #628ca6;
+}
+
+th, td, tfoot {
+    padding: 5px;
+  }
+
+th {border: 1px solid #55555552;}
+
+td {border: 1px solid #55555552;}
+
+.title {
+    background-color: #7fb9c2;
+    font-size: 135%;
+}
+
+.subhead {
+    background-color: #628ca6;
+    color: white;
+    font-weight: bold;
+}
+
+.r1 {
+    background-color: #e7f0ed;
+}
+
+.r2 {
+    background-color: #e7ffed;
+}
+
+.r3 {
+    background-color: #e7f0ed;
+}
+
+.r4 {
+    background-color: #e7ffed;
+}
+
+.r5 {
+    background-color: #e7f0ed;
+}
+
+.bf {font-style: italic;}
+
+.r6 {
+    background-color: #e7ffed;
+}
+
+.goal {
+    background-color: #628ca6;
+    color: white;
+}
+
+table tfoot {
+    background-color: #7fb9c2;
+    font-size: 70%;
+    border: 1px solid #0000004b;
+}
