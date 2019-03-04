@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+<title>Info - Preston | Get-Weather</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/small.css" rel="stylesheet">
+<link href="css/medium.css" rel="stylesheet">
+<link href="css/large.css" rel="stylesheet">
+
+<!-- SCRIPTS -->
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+
+</head>
+
+<body>
+
+<header class="wrap">
+    <figure>
+        <img src="images/logo.jpg" alt="Get Weather logo">
+    </figure>
+    <div>
+    <h1>Get-Weather</h1>
+    <h2>Providing Updates and Weather Intel for Southeastern Idaho</h2>
+    </div>
+</header>
+  
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+<ul id ="primaryNav" class="">
+  <li><a href="#">Home</a></li>
+  <li><a href="index.html">Preston</a></li>
+  <li><a href="#">Soda Springs</a></li>
+  <li><a href="#">Fish Haven</a></li>
+  <li><a href="stormcenter.html">Storm Center</a></li>
+  <li class="active"><a href="#">Gallery</a></li>
+</ul>
+</nav>
+
+<main>
+    
+<h1>Gallery</h1>
+
+    <div class="gallery">
+
+            <figure>
+                <img src="images/hero200.jpg" sizes="96vw" srcset="images/hero500.jpg 500w, images/hero800.jpg 800w">
+                <figcaption>A beautiful day in the hills.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/gallery/snowhill200.jpg" sizes="96vw" srcset="images/gallery/snowhill500.jpg 500w, images/gallery/snowhill800.jpg 800w">
+                <figcaption>Lots of snow!</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/gallery/tornado200.jpg" sizes="96vw" srcset="images/gallery/tornado500.jpg 500w, images/gallery/tornado800.jpg 800w">
+                <figcaption>Tornados don't happen here hardly ever.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/gallery/rainbow200.jpg" sizes="96vw" srcset="images/gallery/rainbow500.jpg 500w, images/gallery/rainbow800.jpg 800w">
+                <figcaption>The sun comes out after a storm.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/gallery/lights200.jpg" sizes="96vw" srcset="images/gallery/lights500.jpg 500w, images/gallery/lights800.jpg 800w">
+                <figcaption>Many people never see the northern lights.</figcaption>
+            </figure>
+  
+            <figure>
+                <img src="images/gallery/beach200.jpg" sizes="96vw" srcset="images/gallery/beach500.jpg 500w, images/gallery/beach800.jpg 800w">
+                <figcaption>Meanwhile in the Bahamas...</figcaption>
+            </figure>
+
+    </div>
+</main>
+
+<footer class="info">
+    <h3>Address:</h3>
+        <p>Weather Center<br>
+        123 Main St. <br>
+        Preston, ID 83263
+        </p>
+
+    <h3 class="two">Phone:</h3>
+        <p class="two">(208) 123-4567
+        </p>
+
+    <h3 class="three">Email:</h3>
+        <p class="three">info@getweather.org</p>
+</footer>
+
+<footer class="final">
+&copy; Cody Graham | 
+    <span id="datetime">
+    </span>
+</footer>
+</body>
+</html>

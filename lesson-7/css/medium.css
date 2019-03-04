@@ -41,12 +41,12 @@ article figure img.history {
 
 main article {clear: both;}
 
-.row {
+.gallery {
     justify-content: center;
 }
 
-.column {
-    flex: 50%;
+.gallery figure {
+    flex-basis: 46%;
     max-width: 50%;
 }
 
