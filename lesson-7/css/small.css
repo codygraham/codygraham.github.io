@@ -8,26 +8,29 @@ body {
 }
 
 /* header rules here */
-.wrap {
+header {
     background-color: #d1af82c0;
-    padding: 1rem 2%;
-    display: grid 110px auto;
+    display: grid;
+    height: 110px;
+    grid-template-columns: 25% auto;
+    justify-content: start;
+    align-content: center;
+    column-gap: 10px;
 }
+
 header div h1 {
     color: black;
-    margin: 0;
+    font-size: 175%;
 }
 header div h2 {
     color: black;
-    margin: 0;
+    font-size: 100%;
     font-weight: 100;
-    padding-left: 70px;
 }
 
 header figure img {
-    float: left;
     width: 100px;
-    margin-left: -50px;
+    margin-left: -25px;
 
 }
 
@@ -88,8 +91,16 @@ img.hero {
     position: relative;
 }
 
-.pics {
-    display: flex auto;
+/*--Gallery--*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px 4px 0;
+}
+
+.column {
+    max-width: 100%;
+    flex: 100%;
 }
 
 figcaption {margin-bottom: .8rem;}
@@ -111,7 +122,9 @@ img.history {
     width: 100%;
     border-radius: 3%;
 }
-main figure {margin: 0;}
+main figure {
+    margin: 0;
+}
 
 main figcaption {text-align: center; font-size: .8rem;}
 

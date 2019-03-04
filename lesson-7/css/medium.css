@@ -1,5 +1,9 @@
 @media only screen and (min-width: 560px) {
 
+header {grid-template-columns: 18% auto;}
+header div h1 {font-size: 190%;}
+header div h2 {font-size: 110%;}
+
 nav li {
     float: left;
     width: auto;
@@ -7,9 +11,8 @@ nav li {
 }
 
 nav a {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    display: block;
+padding: 5px 0;
+display: block;
 }
 
 nav button {display: none;}
@@ -38,8 +41,13 @@ article figure img.history {
 
 main article {clear: both;}
 
-.pics {
-    display: flex 300px 300px;
+.row {
+    justify-content: center;
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
 }
 
 footer.info {
