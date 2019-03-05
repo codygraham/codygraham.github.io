@@ -5,8 +5,8 @@
     .table {width: 100%;}
 
     .gallery figure {
-        flex: 33%;
-        max-width: 33%;
+        flex-basis: 29%;
+        max-width: 29%;
     }
 
     } /* end of media query*/
