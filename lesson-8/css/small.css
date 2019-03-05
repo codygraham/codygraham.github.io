@@ -63,7 +63,7 @@ nav li.active {background-color: #5f9ea0d2;}
 
 nav a {
     display: block;
-    padding: .8rem 0; /* 44 min height */
+    padding: .8rem; /* 44 min height */
     color: #000000;
     text-align: left;
     text-decoration: none;
@@ -168,6 +168,10 @@ div.gallery figure {
 
 div.gallery figure img {
     width: 100%;
+}
+
+div.gallery figure img:hover {
+    box-shadow: 4px 4px 10px #444444;
 }
 
 main figcaption {
