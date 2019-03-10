@@ -1,0 +1,21 @@
+@media only screen and (min-width: 1028px) {
+    
+
+    .table {width: 100%;}
+
+    .gallery figure {
+        flex: 29%;
+        max-width: 29%;
+    }
+
+/*--Home Page--*/
+section.flex2 article {
+    flex-basis: 29%;
+
+}
+
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+    } /* end of media query*/

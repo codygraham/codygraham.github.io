@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+<title>Home | Get-Weather</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/small.css" rel="stylesheet">
+<link href="css/medium.css" rel="stylesheet">
+<link href="css/large.css" rel="stylesheet">
+
+<!-- SCRIPTS -->
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+
+</head>
+
+<body>
+
+<header class="wrap">
+    <figure>
+        <img src="images/logo.jpg" alt="Get Weather logo">
+    </figure>
+    <div>
+    <h1>Get-Weather</h1>
+    <h2>Providing Updates and Weather Intel for Southeastern Idaho</h2>
+    </div>
+</header>
+  
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+<ul id ="primaryNav" class="">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="preston.html">Preston</a></li>
+  <li><a href="#">Soda Springs</a></li>
+  <li><a href="#">Fish Haven</a></li>
+  <li><a href="stormcenter.html">Storm Center</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+</ul>
+</nav>
+
+
+<main class="home">
+  <h1>Home</h1>
+  <section class="flex2">
+
+  </section>
+</main>
+    
+
+
+    <script>
+      var section = document.querySelector('section');
+      var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+      var request = new XMLHttpRequest();
+
+      request.open('GET', requestURL);
+
+      request.responseType = 'json';
+      request.send();
+
+      request.onload = function() {
+        var towns = request.response;
+        showTowns(towns);
+      }
+
+      function showTowns(jsonObj) {
+        var webTowns = jsonObj['towns'];
+            
+        for (var i = 0; i < 3; i++) {
+            var myArticle = document.createElement('article');
+            var myH2 = document.createElement('h2');
+            var myPara1 = document.createElement('div');
+            var myPara2 = document.createElement('div');
+            var myPara3 = document.createElement('div');
+            var myPara4 = document.createElement('div');
+
+            myH2.textContent = webTowns[i].name;
+            myPara1.textContent = webTowns[i].motto;
+            myPara2.textContent = 'Year Founded: ' + webTowns[i].yearFounded;
+            myPara3.textContent = 'Population: ' + webTowns[i].currentPopulation;
+            myPara4.textContent = 'Annual Rainfall: ' + webTowns[i].averageRainfall;
+
+            myArticle.appendChild(myH2);
+            myArticle.appendChild(myPara1);
+            myArticle.appendChild(myPara2);
+            myArticle.appendChild(myPara3);
+            myArticle.appendChild(myPara4);
+
+            section.appendChild(myArticle);
+        }
+      }
+    </script>
+
+
+<footer class="info">
+    <h3>Address:</h3>
+        <p>Weather Center<br>
+        123 Main St. <br>
+        Preston, ID 83263
+        </p>
+
+    <h3 class="two">Phone:</h3>
+        <p class="two">(208) 123-4567
+        </p>
+
+    <h3 class="three">Email:</h3>
+        <p class="three">info@getweather.org</p>
+</footer>
+
+<footer class="final">
+&copy; Cody Graham | 
+    <span id="datetime">
+    </span>
+</footer>
+</body>
+</html>
