@@ -47,57 +47,65 @@
 
 <main class="home">
   <h1>Home</h1>
-  <section class="flex2">
-
-  </section>
-</main>
-    
-
 
     <script>
-      var section = document.querySelector('section');
-      var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+ //Uses JSON to import data from URL below:
+ var section = document.querySelector('main');
+ var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+ var request = new XMLHttpRequest();
 
-      var request = new XMLHttpRequest();
+ request.open('GET', requestURL);
+ request.responseType = 'json';
+ request.send();
 
-      request.open('GET', requestURL);
+ request.onload = function() {
+     var townData = request.response;
+     showData(townData);
+}
 
-      request.responseType = 'json';
-      request.send();
+function showData(jsonObj) {
+  var towns = jsonObj['towns']
 
-      request.onload = function() {
-        var towns = request.response;
-        showTowns(towns);
-      }
+  for (var i = 0; i < towns.length-4; i++){
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myPara4 = document.createElement('p');
+    var myImg = document.createElement('img');
 
-      function showTowns(jsonObj) {
-        var webTowns = jsonObj['towns'];
-            
-        for (var i = 0; i < 3; i++) {
-            var myArticle = document.createElement('article');
-            var myH2 = document.createElement('h2');
-            var myPara1 = document.createElement('div');
-            var myPara2 = document.createElement('div');
-            var myPara3 = document.createElement('div');
-            var myPara4 = document.createElement('div');
+    if (towns[i].name == "Franklin") {
+      myImg.setAttribute('src', 'images/franklin.jpg');
+      myImg.setAttribute('alt', 'Franklin Image');
+    } 
+    else if (towns[i].name == "Fish Haven") {
+      myImg.setAttribute('src', 'images/fish_haven.jpg');
+      myImg.setAttribute('alt', 'Fish Haven');
+    } 
+    else if (towns[i].name == "Greenville") {
+      myImg.setAttribute('src', 'images/greenville.jpg');
+      myImg.setAttribute('alt', 'Greenville');
+    }
 
-            myH2.textContent = webTowns[i].name;
-            myPara1.textContent = webTowns[i].motto;
-            myPara2.textContent = 'Year Founded: ' + webTowns[i].yearFounded;
-            myPara3.textContent = 'Population: ' + webTowns[i].currentPopulation;
-            myPara4.textContent = 'Annual Rainfall: ' + webTowns[i].averageRainfall;
+    myH2.textContent = towns[i].name;
+    myPara1.textContent = towns[i].motto;
+    myPara2.textContent = 'Year founded: ' + towns[i].yearFounded;
+    myPara3.textContent = 'Current population: ' + towns[i].currentPopulation;
+    myPara4.textContent = 'Average annual rainfall: ' + towns[i].averageRainfall;
 
-            myArticle.appendChild(myH2);
-            myArticle.appendChild(myPara1);
-            myArticle.appendChild(myPara2);
-            myArticle.appendChild(myPara3);
-            myArticle.appendChild(myPara4);
+  myArticle.append(myH2);
+  myArticle.append(myPara1);
+  myArticle.append(myPara2);
+  myArticle.append(myPara3);
+  myArticle.append(myPara4);
+  myArticle.append(myImg);
 
-            section.appendChild(myArticle);
-        }
-      }
+  section.appendChild(myArticle);
+}
+}
     </script>
-
+</main>
 
 <footer class="info">
     <h3>Address:</h3>

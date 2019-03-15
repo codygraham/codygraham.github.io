@@ -146,7 +146,7 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
-.submitBtn:hover {background-color: #395c5e}
+.submitBtn:hover {background-color: #d4d4d4}
 
 form label.top input:required {
     border-left: red solid 6px;
@@ -220,33 +220,33 @@ main a.ref {
 
 /*--HOME PAGE--*/
 
-section.flex2 {
-    margin-right: 2%;
-    background-color: #b6b6b6;
-    border: 2px solid #444444;
-}
-section.flex2 article {
-    background-color: white;
-    display: flex;
+main.home {
+    display:flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    margin: 15px;
-    flex-basis: 96%;
-    box-shadow: 4px 4px 10px #444444;
+    justify-content: space-around;
 }
-  
-  section.flex2 h2 {
-    font-size: 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 10px;
-    color: #ce3c3c;
-  }
 
-  section.flex2 div {
-    margin-bottom: 5px;
-    
+main.home h1 {
+    display: block;
+    width: 100%;
 }
+
+main.home article{
+    width: 280px;
+    margin: 2rem 2%;
+    padding: 5px;
+    border: 8px solid #5F9EA0;
+    border-radius: 5px;
+}
+main.home article img{
+    display: flex;
+    margin: 0 auto;
+    width:250px;
+    border-radius: 3px;
+}
+main.home article:hover{
+    box-shadow: 0 0 20px #333;
+    }
 
 /*--FOOTER--*/
 footer.info {
