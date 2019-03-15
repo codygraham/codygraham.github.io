@@ -1,0 +1,67 @@
+@media only screen and (min-width: 560px) {
+
+header div h1 {font-size: 190%;}
+header div h2 {font-size: 110%;}
+
+nav li {
+    float: left;
+    width: auto;
+    margin-right: 2px;
+}
+
+nav a {
+display: block;
+}
+
+nav button {display: none;}
+
+.stats {display: block;}
+
+section {display: block;}
+
+table {width: 59%; border: 1px solid black;}
+
+th {
+    text-align: left;
+    padding: .3rem;
+    background-color: #395c5e4f;
+}
+
+tr {margin-bottom: 10px;}
+
+td {padding-right: .5rem;}
+
+article figure img.history {
+    float: right;
+    width: 40%;
+    margin: 10px;
+}
+
+main article {clear: both;}
+
+.gallery {
+    justify-content: center;
+}
+
+.gallery figure {
+    flex-basis: 46%;
+    max-width: 46%;
+}
+
+/*--Home Page--*/
+section.flex2 article {
+    flex-basis: 45%;
+}
+
+/*--Footer--*/
+footer.info {
+    column-count: 2;
+    margin-top: 0px;
+    vertical-align:top;
+    height: 170px;
+}
+
+footer.final {clear: both;}
+
+} 
+/* end of media query*/

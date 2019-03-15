@@ -237,6 +237,7 @@ main.home article{
     padding: 5px;
     border: 8px solid #5F9EA0;
     border-radius: 5px;
+    text-align: center;
 }
 main.home article img{
     display: flex;
@@ -263,6 +264,7 @@ footer {
     color: black;
 }
 
+#datetime {display: block;}
 
 .clearfix:after {
     content: "";
