@@ -91,28 +91,6 @@ img.hero {
     position: relative;
 }
 
-/*--Gallery--*/
-div.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-div.gallery figure {
-    flex-basis: 96%;
-    width: 100%;
-    margin: 1rem 2%;
-}
-
-div.gallery figure img {
-    width: 100%;
-}
-
-main figcaption {
-    font-size: .8rem;
-    margin-bottom: .8rem;
-}
-
 .stats {
 	position: absolute;
 	top: 25px;
@@ -144,6 +122,30 @@ main a.ref {
     list-style-type: none;
 }
 
+/*--Gallery--*/
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.gallery figure {
+    flex-basis: 96%;
+    width: 100%;
+    margin: 1rem 2%;
+}
+
+div.gallery figure img {
+    width: 100%;
+}
+div.gallery figure img:hover {box-shadow: 0 0 30px #5c5c5c;}
+
+main figcaption {
+    font-size: .8rem;
+    margin-bottom: .8rem;
+}
+
+/*--Footer--*/
 footer.info {
     text-align: left;
     padding: 1rem 2%;

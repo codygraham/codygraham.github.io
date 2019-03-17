@@ -41,6 +41,7 @@ article figure img.history {
 
 main article {clear: both;}
 
+/*--Gallery--*/
 .gallery {
     justify-content: center;
 }
@@ -50,6 +51,7 @@ main article {clear: both;}
     max-width: 46%;
 }
 
+/*--Footer--*/
 footer.info {
     column-count: 2;
     margin-top: 0px;

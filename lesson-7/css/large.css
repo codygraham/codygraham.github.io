@@ -4,6 +4,7 @@
 
     .table {width: 100%;}
 
+    /*--Gallery--*/
     .gallery figure {
         flex-basis: 29%;
         max-width: 29%;
