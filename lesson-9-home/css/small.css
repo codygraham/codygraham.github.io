@@ -257,14 +257,31 @@ footer.info {
     color: black;
 }
 
-footer {
-    text-align: center;
+footer.info {
+    text-align: left;
     padding: 1rem 2%;
     background-color: #d1af82c0;
     color: black;
 }
 
-#datetime {display: block;}
+.final {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2%;
+    background-color: #DEB887;
+    color: black;
+}
+
+span {
+flex-basis: 50%;
+
+}
+
+#datetime {padding-left: 5px;}
+
+#copy {
+    text-align: right;
+}
 
 .clearfix:after {
     content: "";

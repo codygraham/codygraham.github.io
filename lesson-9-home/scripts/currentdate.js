@@ -63,5 +63,5 @@ window.onload = function() {
   }
   var year = d.getFullYear();
   var date = d.getDate();
-  document.getElementById('datetime').innerHTML = day + ", " + date + " " + month + " " + year;
+  document.getElementById('datetime').innerHTML = "\t" + day + ", " + date + " " + month + " " + year;
 }
