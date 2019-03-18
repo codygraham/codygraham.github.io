@@ -17,6 +17,7 @@
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/windchill.js"></script>
+<script src="scripts/weather.js"></script>
 
 </head>
 
@@ -52,9 +53,8 @@
         <img class ="hero" src="images/hero200.jpg" alt="Hero Image" srcset="images/hero500.jpg 500w, images/hero800.jpg 800w">
             <section class="stats">
                 <h3>Current Conditions</h3>
-                <p>Cloudy</p>
-                <p>Low: 11&#x2109;</p>
-                <p>High: 29&#x2109;</p>
+                <p>Condition: <span id="condition"></span></p>
+                <p>Temperature: <span id="temp"></span>&#x2109;</p>
                 <p id="chill"></p>
             </section>
         </div>

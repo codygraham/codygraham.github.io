@@ -17,7 +17,7 @@ nav button {display: none;}
 
 .stats {display: block;}
 
-section {display: block;}
+section.forecast {display: block;}
 
 table {width: 59%; border: 1px solid black;}
 
