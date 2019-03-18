@@ -15,11 +15,22 @@ display: block;
 
 nav button {display: none;}
 
-.stats {display: block;}
+section.stats {
+    display: block;
+    transition: .3s;
+}
+
+section.stats:hover {
+    transform: scale(1.05);
+}
+
 
 section.forecast {display: block;}
 
-table {width: 59%; border: 1px solid black;}
+table {
+    width: 59%; border: 3px solid black;
+    box-shadow: 0 0 15px #464646;
+}
 
 th {
     text-align: left;
@@ -35,6 +46,7 @@ article figure img.history {
     float: right;
     width: 40%;
     margin: 10px;
+    box-shadow: 3px 3px 15px #464646;
 }
 
 main article {clear: both;}

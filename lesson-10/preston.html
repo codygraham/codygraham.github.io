@@ -16,8 +16,8 @@
 <!-- SCRIPTS -->
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/hamburger.js"></script>
-<script src="scripts/windchill.js"></script>
 <script src="scripts/weather.js"></script>
+<script src="scripts/windchill.js"></script>
 
 </head>
 
@@ -50,12 +50,12 @@
 <h1>Preston</h1>
 
     <div class="herodiv">
-        <img class ="hero" src="images/hero200.jpg" alt="Hero Image" srcset="images/hero500.jpg 500w, images/hero800.jpg 800w">
+        <img class ="hero" src="images/hero200.jpg" alt="Hero Image" srcset="images/hero500.jpg size=500w, images/hero800.jpg size=800w">
             <section class="stats">
                 <h3>Current Conditions</h3>
                 <p>Condition: <span id="condition"></span></p>
                 <p>Temperature: <span id="temp"></span>&#x2109;</p>
-                <p id="chill"></p>
+                <div id="chill"><script src="scripts/windchill.js"></script></div>
             </section>
         </div>
 
@@ -127,8 +127,8 @@
 </footer>
 
 <footer class="final">
-&copy; Cody Graham | 
-    <span id="datetime">
+        <a href="https://openweathermap.org/">OpenWeatherMap</a> | &copy; Cody Graham  
+    <span id="datetime"><script src="scripts/currentdate.js"></script>
     </span>
 </footer>
 </body>

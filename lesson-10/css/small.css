@@ -171,10 +171,12 @@ div.gallery figure {
 
 div.gallery figure img {
     width: 100%;
+    transition: .3s;
 }
 
 div.gallery figure img:hover {
     box-shadow: 4px 4px 10px #444444;
+    transform: scale(1.03);
 }
 
 main figcaption {
