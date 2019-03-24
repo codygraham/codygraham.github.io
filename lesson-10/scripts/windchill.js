@@ -6,5 +6,5 @@ window.onload = function windChill() {
 
     wChill = one - two;
 
-    document.getElementById('chill').innerHTML = "Wind Chill: " + Math.round(wChill) + "&#x2109;";
+    document.getElementById('chill').innerHTML = Math.round(wChill) + "&#x2109;";
 }
