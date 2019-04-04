@@ -1,7 +1,7 @@
 * { -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* body rules */
+/*----------Body----------*/
 body {
     font-family: Verdana;
     font-size: 16px;
@@ -9,7 +9,7 @@ body {
     margin-right: 5%;
 }
 
-/* header rules here */
+/*----------Header----------*/
 header {
     background-color: #e6e6e6;
     display: grid;
@@ -41,12 +41,12 @@ header figure img {
 
 }
 
-/* Navigation rules here */
+/*----------Navigation----------*/
 nav {
     background-color: #ffffff;
     border-bottom: 3px solid #ffffff;
     border-top: 3px solid white;
-    border-image: radial-gradient(#010046 0%, #ffffff 100%);
+    border-image: radial-gradient(#010046 40%, #ffffff 90%);
     border-image-slice: 1;
     border-width: 3px;
 }
@@ -94,7 +94,7 @@ nav a:hover {
     box-shadow: 0 5px 8px #c5c5c5;
 }
 
-/* main rules here */
+/*----------Main----------*/
 main {
     display: block;
 }
@@ -144,7 +144,7 @@ form label.top input, form label.top select {
     color: #555;
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(0, 0, 0, 0.1)
+    background-color: #0000001a
 }
 
 form label.sbs {
@@ -174,7 +174,7 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
-/*--Gallery--*/
+/*----------Gallery----------*/
 div.gallery {
     display: flex;
     flex-wrap: wrap;
@@ -223,7 +223,10 @@ main figure {
     margin: 0;
 }
 
-main figcaption {text-align: center; font-size: .8rem;}
+main figcaption {
+    text-align: center; 
+    font-size: .8rem;
+}
 
 article {
     clear: both;
@@ -238,7 +241,7 @@ main a.ref {
     list-style-type: none;
 }
 
-/*--HOME PAGE--*/
+/*----------HOME PAGE----------*/
 
 main.home {
     display:flex;
@@ -269,7 +272,7 @@ main.home article:hover{
     box-shadow: 0 0 20px #333;
     }
 
-/*--FOOTER--*/
+/*-----------FOOTER-----------*/
 footer.info {
     text-align: left;
     padding: 1rem 2%;
@@ -277,7 +280,7 @@ footer.info {
     color: black;
     border-bottom: 3px solid #ffffff;
     border-top: 3px solid white;
-    border-image: radial-gradient(#010046 0%, #ffffff 100%);
+    border-image: radial-gradient(#010046 40%, #ffffff 90%);
     border-image-slice: 1;
     border-width: 3px;
 }
