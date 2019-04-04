@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Find your stay nearby the LDS temple of your choice. ">
+<meta name="author" content="John Doe">
+<title>Home | Hotel Inn & Suites</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/small.css" rel="stylesheet">
+<link href="css/medium.css" rel="stylesheet">
+<link href="css/large.css" rel="stylesheet">
+
+<!-- SCRIPTS -->
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+
+</head>
+
+<body>
+
+<header class="wrap">
+    <figure>
+        <img src="images/logo.jpg" alt="Get Weather logo">
+    </figure>
+    <div>
+    <h1>Get-Weather</h1>
+    <h2>Providing Updates and Weather Intel for Southeastern Idaho</h2>
+    </div>
+</header>
+  
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+<ul id ="primaryNav" class="">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="preston.html">Preston</a></li>
+  <li><a href="#">Soda Springs</a></li>
+  <li><a href="#">Fish Haven</a></li>
+  <li><a href="stormcenter.html">Storm Center</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+</ul>
+</nav>
+
+
+<main class="home">
+  <h1>Home</h1>
+
+    <script>
+ //Uses JSON to import data from URL below:
+ var section = document.querySelector('main');
+ var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+ var request = new XMLHttpRequest();
+
+ request.open('GET', requestURL);
+ request.responseType = 'json';
+ request.send();
+
+ request.onload = function() {
+     var townData = request.response;
+     showData(townData);
+}
+
+function showData(jsonObj) {
+  var towns = jsonObj['towns']
+
+  for (var i = 0; i < towns.length-4; i++){
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myPara4 = document.createElement('p');
+    var myImg = document.createElement('img');
+
+    if (towns[i].name == "Franklin") {
+      myImg.setAttribute('src', 'images/franklin.jpg');
+      myImg.setAttribute('alt', 'Franklin Image');
+    } 
+    else if (towns[i].name == "Fish Haven") {
+      myImg.setAttribute('src', 'images/fish_haven.jpg');
+      myImg.setAttribute('alt', 'Fish Haven');
+    } 
+    else if (towns[i].name == "Greenville") {
+      myImg.setAttribute('src', 'images/greenville.jpg');
+      myImg.setAttribute('alt', 'Greenville');
+    }
+
+    myH2.textContent = towns[i].name;
+    myPara1.textContent = towns[i].motto;
+    myPara2.textContent = 'Year founded: ' + towns[i].yearFounded;
+    myPara3.textContent = 'Current population: ' + towns[i].currentPopulation;
+    myPara4.textContent = 'Average annual rainfall: ' + towns[i].averageRainfall;
+
+  myArticle.append(myH2);
+  myArticle.append(myPara1);
+  myArticle.append(myPara2);
+  myArticle.append(myPara3);
+  myArticle.append(myPara4);
+  myArticle.append(myImg);
+
+  section.appendChild(myArticle);
+}
+}
+    </script>
+</main>
+
+<footer class="info">
+    <h3>Address:</h3>
+        <p>Weather Center<br>
+        123 Main St. <br>
+        Preston, ID 83263
+        </p>
+
+    <h3 class="two">Phone:</h3>
+        <p class="two">(208) 123-4567
+        </p>
+
+    <h3 class="three">Email:</h3>
+        <p class="three">info@getweather.org</p>
+</footer>
+
+<footer class="final">
+&copy; Cody Graham | 
+<span id="datetime"><script src="scripts/currentdate.js"></script>
+</span>
+</footer>
+</body>
+</html>
