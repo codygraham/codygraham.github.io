@@ -1,21 +1,18 @@
 @media only screen and (min-width: 1028px) {
     
+    body {margin: 0 10%;}
 
-    .table {width: 100%;}
+    /*----------Main------------*/
 
-    .gallery figure {
-        flex: 29%;
-        max-width: 29%;
+    main figure.hero {height:35vw;}
+
+    /*----------Flex Box----------*/
+
+    .reservelink {
+        padding: 3.3rem;
     }
 
 /*--Home Page--*/
-section.flex2 article {
-    flex-basis: 27%;
 
-}
-
-    form label.sbs {
-        padding: .4rem 0;
-    }
 
     } /* end of media query*/

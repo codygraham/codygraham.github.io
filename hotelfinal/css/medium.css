@@ -1,8 +1,11 @@
 @media only screen and (min-width: 560px) {
 
-body {max-width: 100%;}
+body {
+    max-width: 100%;
+    margin: 0 5%;
+}
 
-header div h1 {font-size: 190%;}
+header div h1 {font-size: 200%;}
 header div h2 {font-size: 110%;}
 
 nav ul {
@@ -16,68 +19,41 @@ nav li {
     border: none;
 }
 
+nav li.active, nav a:hover {
+    text-decoration: underline;
+}
+
 nav a {
 display: block;
 }
 
 nav button {display: none;}
 
-section.stats {
-    display: block;
-    transition: .3s;
-}
+/*----------Hero----------*/
 
-section.stats:hover {
-    transform: scale(1.05);
-}
+main figure.hero {height:45vw;}
 
+p.intro {column-count: 2;}
 
-section.forecast {display: block;}
+/*---------Flex Box----------*/
 
-.table {
-    width: 100%;
-    border: 2px solid #5F9EA0;
-    box-shadow: 0 0 15px #464646;
-}
-
-th {
-    text-align: left;
-    padding: .3rem;
-    background-color: #395c5e4f;
-}
-
-tr {margin-bottom: 10px;}
-
-td {padding-right: .5rem;}
-
-article figure img.history {
-    float: right;
-    width: 40%;
-    margin: 10px;
-    box-shadow: 3px 3px 15px #464646;
-}
-
-main article {clear: both;}
-
-.gallery {
-    justify-content: center;
-}
-
-.gallery figure {
+.flexbox section {
     flex-basis: 46%;
-    max-width: 46%;
+    margin-bottom: 20px;
 }
 
-/*--Home Page--*/
-section.flex2 article {
-    flex-basis: 45%;
+.subhome {margin-right: 10px;}
+
+.reservelink {
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 /*--Footer--*/
 footer.info {
     column-count: 2;
     margin-top: 0px;
-    vertical-align:top;
+    vertical-align: top;
     height: 180px;
 }
 
