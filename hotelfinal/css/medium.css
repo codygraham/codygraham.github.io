@@ -1,12 +1,18 @@
 @media only screen and (min-width: 560px) {
+    
+/*----------Body----------*/
 
 body {
     max-width: 100%;
     margin: 0 5%;
 }
 
+/*----------Header----------*/
+
 header div h1 {font-size: 200%;}
 header div h2 {font-size: 110%;}
+
+/*----------Navigation----------*/
 
 nav ul {
     display: flex;
@@ -44,9 +50,15 @@ p.intro {column-count: 2;}
 
 .subhome {margin-right: 10px;}
 
-.reservelink {
+.right {
     margin-top: 20px;
     margin-left: 10px;
+}
+
+/*---------Reservation----------*/
+
+.reservation {
+    justify-content: space-between;
 }
 
 /*--Footer--*/

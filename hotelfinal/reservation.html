@@ -15,6 +15,7 @@
 
 <!-- SCRIPTS -->
 <script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
 
 
 </head>
@@ -39,7 +40,6 @@
   <li class="active"><a href="#">Reservation</a></li>
   <li><a href="#">Services</a></li>
   <li><a href="#">Contact</a></li>
-  <li><a href="#">Gallery</a></li>
 </ul>
 </nav>
 
@@ -47,62 +47,53 @@
 <main class="home">
   <h1>Make a Reservation</h1>
 
-  <form method="get" action="thanks.html">
-    <fieldset>
-        <legend> Reporter's Information</legend>
+  <form class="reservation" method="get" action="../hotelfinal/thanks.html">
+    <fieldset class="first">
+        <legend> Reservation Details</legend>
 
-        <label class="top"> Full Name* <input type="text" name="fname" required> </label>
-
-        <label class="top"> Phone* <input type="tel" name="phone" placeholder="1235551234" required> </label>
-
-        <label class="top"> Email <input type="email" name="email" placeholder="someone@gmail.com"> </label>
-
-        <label class="top"> Zip Code* <input type="number" name="zip" required> </label>
-    </fieldset>
-
-    <fieldset>
-        <legend>Storm Information</legend>
-
-            <label class="top"> Date of Storm <input type="date" name="completeDate"></label>
-
-            <label class="top">Storm Type <input list="stormType">
-                <datalist id="stormType">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
-                </datalist>
-            </label>
-
-            <label class="top" for="rating">Storm Severity (1 to 10):</label>
-        <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-        <span id="ratingvalue">5</span><br>
-
-            <label class="top">Storm Region
-                <select name="location">
-                <option value="" selected disabled>Select Region...</option>
-                <option value="haven">Fish Haven</option>
-                <option value="preston">Preston</option>
-                <option value="springs">Soda Springs</option>
+        <label class="top" required>Location
+            <select name="location">
+                <option value="" selected disabled>Select Location...</option>
+                <option value="bethesda">Bethesda, MD USA</option>
+                <option value="kingston">Kingston, Jamaica</option>
+                <option value="losangeles">Los Angeles, CA USA</option>
+                <option value="portland">Portland, OR USA</option>
             </select>
         </label>
+
+        <label class="top" id="arrive"> Arrival Date* <input type="date" name="completeDate" required></label>
+
+        <label class="top" id="depart"> Departure Date* <input type="date" name="completeDate" required></label>
+
+        <label class="top"> Number of Rooms* <input type="number" name="numrooms" placeholder="3" required> </label>
+
+        <label class="top" required>Type of Room
+            <select name="location">
+                <option value="" selected disabled>Select Room Type...</option>
+                <option value="bethesda">Standard (2 bed)</option>
+                <option value="kingston">Suite (3 bed)</option>
+                <option value="losangeles">Master Suite (4 bed)</option>
+            </select>
+            </label>
+    </fieldset>
+
+    <fieldset class="second">
+        <legend>Guest Information</legend>
+
+            <label class="top"> Full Name* <input type="text" name="fname" required> </label>
+
+            <label class="top"> Phone (Optional) <input type="tel" name="phone" placeholder="1235551234"> </label>
+
+            <label class="top"> Email*<input type="email" name="email" placeholder="someone@mail.com" required>
+            </label>
+
+            <label class="top"> Home State or Country (Optional) <input type="text" name="fname"> </label>
+
+            <div>Special Accommodations/Comments</div>
+            <textarea cols="36" rows="4"></textarea>
         </fieldset>
 
-        <fieldset>
-            <legend>Additional Information</legend>
-            <div>Are You in Danger?</div>
-                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
-
-                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
-
-                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
-
-                <div>Additonal Comments</div>
-                <textarea cols="40" rows="4"></textarea>
-        </fieldset>
-
-      <input type="submit" value="Report Storm" class="submitBtn">
+      <input type="submit" value="Make Reservation" class="submitBtn">
 
     </form>
 
@@ -116,7 +107,7 @@
         </p>
 
     <h3 class="two">Phone:</h3>
-        <p class="two">(410) 123-4567
+        <p class="two">(410) 000-9999
         </p>
 
     <h3 class="three">Email:</h3>

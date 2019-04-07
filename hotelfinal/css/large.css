@@ -2,17 +2,10 @@
     
     body {margin: 0 10%;}
 
-    /*----------Main------------*/
+    /*----------Home Page------------*/
 
     main figure.hero {height:35vw;}
 
-    /*----------Flex Box----------*/
-
-    .reservelink {
-        padding: 3.3rem;
-    }
-
-/*--Home Page--*/
 
 
     } /* end of media query*/
