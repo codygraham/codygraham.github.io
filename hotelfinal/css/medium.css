@@ -48,7 +48,9 @@ p.intro {column-count: 2;}
     margin-bottom: 20px;
 }
 
-.subhome {margin-right: 10px;}
+.subhome {
+    margin-right: 10px;
+}
 
 .right {
     margin-top: 20px;
@@ -61,7 +63,22 @@ p.intro {column-count: 2;}
     justify-content: space-between;
 }
 
-/*--Footer--*/
+/*---------Contact Flexbox----------*/
+
+.contact section {
+    flex-basis: 32%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.c1 {font-size: 87%;}
+
+.map {justify-items: center;}
+.map iframe {height: 400px;}
+
+
+
+/*----------Footer----------*/
 footer.info {
     column-count: 2;
     margin-top: 0px;

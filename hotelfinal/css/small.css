@@ -239,11 +239,11 @@
         background-color: #00550b;
         color: #ffffff;
         border-radius: 1rem;
-        padding: .75rem 1.5rem;
-        margin: 0 0 2rem 2%;
+        padding: .75rem 1rem;
         width: 96%;
         max-width: 20rem;
         transition: .3s;
+        margin-bottom: 20px;
     }
     
     .submitBtn:hover {
@@ -274,6 +274,34 @@
         list-style-type: none;
     }
     
+    /*-----------Contact-----------*/
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .contact section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        background-image: radial-gradient(white, #e6e6e6);
+        border: 2px solid #00550b;
+        padding-left: .3rem;
+    }
+    .contact h3 {color: #00550b;}
+
+    .map {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .map iframe {
+        width: 100%;
+        border: 2px solid #00550b;
+        height: 300px;
+    }
+
     /*-----------Footers-----------*/
     footer.info {
         text-align: left;
@@ -285,6 +313,7 @@
         border-image: radial-gradient(#00550b 40%, #ffffff 90%);
         border-image-slice: 1;
         border-width: 3px;
+        margin-top: 20px;
     }
     
     footer {
