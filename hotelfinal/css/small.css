@@ -24,17 +24,19 @@
         color: #00550b;
         font-size: 160%;
         margin-top: 30px;
+        margin-left: -20px;
     }
     header div h2 {
         color: #00550b;
-        font-size: 90%;
+        font-size: 100%;
         font-weight: 100;
         margin-top: -10px;
+        margin-left: -20px;
     }
     
     header figure img {
         width: 60px;
-        margin-left: -10px;
+        margin-left: -25px;
         margin-top: 10px;
     
     }
@@ -244,6 +246,7 @@
         max-width: 20rem;
         transition: .3s;
         margin-bottom: 20px;
+        float: bottom;
     }
     
     .submitBtn:hover {
@@ -314,6 +317,13 @@
         border-image-slice: 1;
         border-width: 3px;
         margin-top: 20px;
+    }
+
+    .infoc {display: none;}
+    .finalc {
+        border-top: 3px solid white;
+        border-image: radial-gradient(#00550b 45%, #ffffff 90%);
+        border-image-slice: 1;
     }
     
     footer {
