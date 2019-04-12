@@ -1,5 +1,5 @@
 @media only screen and (min-width: 560px) {
-    
+
 /*----------Body----------*/
 
 body {
@@ -34,6 +34,10 @@ display: block;
 }
 
 nav button {display: none;}
+
+.dropbtn {display: block;}
+
+.dropdown-content {width: 150px;}
 
 /*----------Hero----------*/
 
