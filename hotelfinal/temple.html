@@ -16,6 +16,10 @@
 <!-- SCRIPTS -->
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/hamburger.js"></script>
+<script src="scripts/weatherdc.js"></script>
+<script src="scripts/weatherg.js"></script>
+<script src="scripts/weatherm.js"></script>
+<script src="scripts/weatherp.js"></script>
 
 </head>
 
@@ -53,28 +57,79 @@
 
 <main class="home">
 
-  <figure class="hero"></figure>
+  <h1>Temple Schedule Information</h1>
+  <h3 class="minitemp"><i>Come back soon to see more temple schedules!</i></h3>
 
-  <p class="intro">The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. The owner-operated company caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by the company.</p>
 
-  <div class="flexbox">
-    <section class="subhome">
-      <h2>Temple of the Week</h2>
-      <h4>Portland, Oregon Temple</h4>
+  <div class="flextemp">
+      <section class="temp" id="sh">
+        <h2>Washington DC Temple - Closed for renovation</h2>
+        <h4>9900 Stoneybrook Dr Kensington MD 20895-3199</h4>
+  
+          <img class="temple" src="images/dctemple.jpeg">
+  
+          <p class="tempinfo"><b>Dedicated:</b> September 17, 1974</p>
+          <p class="tempinfo"><b>Telephone:</b> 301-588-0650</p><br>
+          <section class="stats">
+            <p><b>Current Weather</b></p>
+            <p>Condition: <span id="condition4"></span></p>
+            <p>Temperature: <span id="temp4"></span>&#x2109;</p>
+            <p>Wind Chill: <span id="chill4"></span>&#x2109;</p>
+          </section>
+          <a href="https://www.lds.org/locations/washington-dc-temple-visitors-center?lang=eng">Click here for ordinance schedule and closure details</a>
+      </section>
+  
+      <section class="temp" id="sh">
+        <h2>Gilbert, AZ Temple</h2>
+        <h4>3301 S Greenfield Rd Gilbert AZ 85297</h4>
+  
+          <img class="temple" src="images/gilberttemple.jpg">
+        
+          <p class="tempinfo"><b>Dedicated:</b> 2 March 2014</p>
+          <p class="tempinfo"><b>Telephone:</b> 480-822-5000</p><br>
+          <section class="stats">
+            <p><b>Current Weather</b></p>
+            <p>Condition: <span id="condition3"></span></p>
+            <p>Temperature: <span id="temp3"></span>&#x2109;</p>
+            <p>Wind Chill: <span id="chill3"></span>&#x2109;</p>
+          </section>
+          <a href="https://www.lds.org/temples/details/gilbert-arizona-temple?lang=eng">Click here for ordinance schedule and closure details</a>
+      </section>      
+      
+      <section class="temp" id="sh">
+        <h2>Meridian, ID Temple</h2>
+        <h4>7355 N Linder Rd Meridian ID 83646</h4>
+  
+            <img class="temple" src="images/meridiantemple.jpg">
+  
+            <p class="tempinfo"><b>Dedicated:</b> 19 November 2017</p>
+            <p class="tempinfo"><b>Telephone:</b> 208-957-7300</p><br>
+            <section class="stats">
+              <p><b>Current Weather</b></p>
+              <p>Condition: <span id="condition2"></span></p>
+              <p>Temperature: <span id="temp2"></span>&#x2109;</p>
+              <p>Wind Chill: <span id="chill2"></span>&#x2109;</p>
+            </section>
+            <a href="https://www.lds.org/temples/details/meridian-idaho-temple?lang=eng">Click here for ordinance schedule and closure details</a>
+      </section>
+    
+      <section class="temp" id="sh">
+        <h2>Portland, OR Temple</h2>
+        <h4>13600 Kruse Oaks Blvd Lake Oswego OR 97035-8602</h4>
+  
+          <img class="temple" src="images/portlandtemple.jpg">
 
-        <img class="temple" src="images/portlandtemple.jpg">
-
-        <article class="summary">
-          <p>Rising elegantly among towering Douglas-fir trees, the six spires of the marble-clad Portland Oregon Temple create a beautiful sight for motorists traveling Oregon's I-5, situated about 8 miles south of downtown Portland in Lake Oswego. On the east side of the temple is a serene reflection pool sitting at the base of the main spire. A fountain on the west side replenishes an infinity pool.</p>
-        </article>
-    </section>
-
-    <section class="reservelink">
-        <form method="get" action="../hotelfinal/reservation.html">
-            <input type="submit" value="Make a Reservation" class="right">
-        </form>
-    </section>
-  </div>
+          <p class="tempinfo"><b>Dedicated:</b> 19 August 1989</p>
+          <p class="tempinfo"><b>Telephone:</b> 503-639-7066</p><br>
+          <section class="stats">
+            <p><b>Current Weather</b></p>
+            <p>Condition: <span id="condition"></span></p>
+            <p>Temperature: <span id="temp"></span>&#x2109;</p>
+            <p>Wind Chill: <span id="chill"></span>&#x2109;</p>
+          </section>
+          <a href="https://www.lds.org/temples/details/portland-oregon-temple?lang=eng">Click here for ordinance schedule and closure details</a>
+        </section>
+    </div>
 
 </main>
 
