@@ -78,7 +78,24 @@ section.receptionleft {
     margin-bottom: 20px;
 }
 
+.receptionright h2 {flex-basis: 100%;}
 
+.bronze, .silver, .gold {
+flex-basis: 45%;
+}
+
+.bronze {margin-right: 10px;}
+.silver {margin-left: 10px;}
+
+/*---------Suites----------*/
+
+.contactus {
+    flex-basis: 46%;
+    align-items: start;
+    justify-items: left;
+    width: 90%;
+    margin-top:-20px;
+}
 
 /*---------Contact Flexbox----------*/
 
