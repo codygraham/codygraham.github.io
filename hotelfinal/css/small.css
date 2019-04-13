@@ -239,6 +239,37 @@ img.temple {
     width: 100%;
 }
 
+/*-----------Temple Info--------------*/
+
+.flextemp {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.flextemp h4 {
+    margin-top: -15px;
+    margin-bottom: 2px;;
+}
+
+.stats p {margin-top: -10px;}
+
+.minitemp {
+    margin-top: -10px;
+}
+
+section.temp {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+}
+
+p.temp {
+    display: block;
+    clear: both;
+    column-count: 2;
+    column-rule: 1px solid #ddd;
+}
+
 /*----------- Reservation --------------*/
 form fieldset {
     margin: 2rem 0;
