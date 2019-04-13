@@ -43,6 +43,7 @@ header figure img {
 }
 
 /*----------Navigation----------*/
+
 nav {
     background-color: #ffffff;
     border-bottom: 3px solid #ffffff;
@@ -229,7 +230,7 @@ img.temple {
     font-weight: bold;
     font-size: 150%;
     text-decoration: none;
-    background-image: linear-gradient(white, #a3a3a3);
+    background-image: linear-gradient(white, #d1d1d1 35%);
     border: 2px solid #00550b;
     color: #00550b;
     height: 150px;
@@ -249,13 +250,15 @@ form fieldset {
 
 .reservation {
     display: flex;
-    flex-wrap: wrap;
-    align-items: start;
+    flex-wrap: nowrap;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .reservation fieldset {
     flex-basis: 100%;
+    width: 100%;
 }
 
 form legend {
@@ -281,18 +284,12 @@ form label.top input, form label.top select {
     color: black;
     width: 100%;
     max-width: 20rem;
-    background-color: #0000001a
-}
-
-form label.sbs {
-    display: block;
-    padding: .75rem 0;
-    color: #395c5e;
+    background-color: #ffffff
 }
 
 form input.submitBtn {
     border: none;
-    background-color: #00550b;
+    background-image: linear-gradient(#bbbbbb, #00550b 35%);
     color: #ffffff;
     border-radius: 1rem;
     padding: .75rem 1rem;
@@ -301,19 +298,20 @@ form input.submitBtn {
     transition: .3s;
     margin-bottom: 20px;
     float: bottom;
+    justify-items: start;
 }
 
 .submitBtn:hover {
     background-color: #00550bd5;
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 form label.top input:required {
-    border-left: red solid 6px;
+    border: red solid 2px;
 }
 
 form label.top input:required:valid {
-    border-left: green solid 6px;
+    border: #019201 solid 2px;
 }
 
 
@@ -335,6 +333,33 @@ main a.ref {
 
 .subhome ul {margin-left: -20px;}
 .subhome li {margin-bottom: 5px;}
+
+/*----------- Wedding Reception----------*/
+section.receptionleft {
+    width: 100%;
+    background-image: radial-gradient(white, #e6e6e6);
+    border: 2px solid #00550b;
+    padding: .3rem;
+}
+
+.child h3 {color: #00550b;}
+
+img.reception {
+    width: 100%;
+    margin-bottom: -10px;
+    margin-top: -5px;
+}
+
+h4.theme {
+    color: #00550b;
+    margin-bottom: -10px;
+}
+
+p.soon {
+    font-size: 90%;
+    font-style: italic;
+}
+
 
 /*-----------Contact-----------*/
 

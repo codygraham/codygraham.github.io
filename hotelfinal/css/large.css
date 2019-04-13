@@ -7,9 +7,25 @@
         font-size: 100%;
     }
 
-    /*----------Home Page------------*/
+/*----------Home Page------------*/
 
     main figure.hero {height:35vw;}
+
+/*----------Reservation----------*/
+
+.reservation fieldset {
+    width: 50%;
+ }
+
+ /*----------- Wedding Reception----------*/
+
+.receptionleft{
+    max-width: 50%;
+}
+
+.child img, h3 {width: 49%;}
+
+.child2 {float: right;}
 
 /*----------Contact Flexbox----------*/
 

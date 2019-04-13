@@ -1,0 +1,96 @@
+@media only screen and (min-width: 560px) {
+
+/*----------Body----------*/
+
+body {
+    max-width: 100%;
+    margin: 0 5%;
+}
+
+/*----------Header----------*/
+
+header div h1 {font-size: 200%;}
+header div h2 {font-size: 110%;}
+
+/*----------Navigation----------*/
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    float: left;
+    width: auto;
+    border: none;
+}
+
+nav li.active, nav a:hover {
+    text-decoration: underline;
+}
+
+nav a {
+display: block;
+}
+
+nav button {display: none;}
+
+.dropbtn {display: block;}
+
+.dropdown-content {width: 150px;}
+
+/*----------Hero----------*/
+
+main figure.hero {height:45vw;}
+
+p.intro {column-count: 2;}
+
+/*---------Flex Box----------*/
+
+.flexbox section {
+    flex-basis: 46%;
+    margin-bottom: 20px;
+}
+
+.subhome {
+    margin-right: 10px;
+}
+
+.right {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/*---------Reservation----------*/
+
+.reservation {
+    justify-content: space-between;
+}
+
+/*---------Contact Flexbox----------*/
+
+.contact section {
+    flex-basis: 32%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.c1 {font-size: 87%;}
+
+.map {justify-items: center;}
+.map iframe {height: 400px;}
+
+
+
+/*----------Footer----------*/
+footer.info {
+    column-count: 2;
+    margin-top: 0px;
+    vertical-align: top;
+    height: 180px;
+}
+
+footer.final {clear: both;}
+
+} 
+/* end of media query*/

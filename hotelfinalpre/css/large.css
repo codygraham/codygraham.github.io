@@ -1,0 +1,27 @@
+@media only screen and (min-width: 1028px) {
+    
+    body {margin: 0 10%;}
+
+    .dropdown-content {
+        width: 200px;
+        font-size: 100%;
+    }
+
+    /*----------Home Page------------*/
+
+    main figure.hero {height:35vw;}
+
+/*----------Contact Flexbox----------*/
+
+    .contact section {
+        flex-basis: 29%;
+    }
+
+    .c1 {font-size: 100%;}
+
+    .map iframe {
+        height: 500px;
+    }
+
+    
+    } /* end of media query*/

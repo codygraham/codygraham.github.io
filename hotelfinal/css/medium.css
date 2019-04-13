@@ -67,6 +67,19 @@ p.intro {column-count: 2;}
     justify-content: space-between;
 }
 
+.reservation fieldset {
+   width: 80%;
+}
+
+/*----------- Wedding Reception----------*/
+
+section.receptionleft {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
 /*---------Contact Flexbox----------*/
 
 .contact section {

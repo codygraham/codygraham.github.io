@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Find your stay nearby the LDS temple of your choice. ">
+<meta name="author" content="John Doe">
+<title>Services | Temple Inn & Suites</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/small.css" rel="stylesheet">
+<link href="css/medium.css" rel="stylesheet">
+<link href="css/large.css" rel="stylesheet">
+
+<!-- SCRIPTS -->
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+
+
+</head>
+
+<body>
+
+<header class="wrap">
+    <figure>
+        <img src="images/logo.jpg" alt="Get Weather logo">
+    </figure>
+    <div>
+    <h1>Temple Inn & Suites</h1>
+    <h2>Find Your Roots and Build Your Branches</h2>
+    </div>
+</header>
+  
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+<ul id ="primaryNav" class="">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="temple.html">Temple</a></li>
+  <li class="active"><a href="#">Reservation</a></li>
+  <li><div class="dropdown">
+    <button class="dropbtn">Services <div class="down"></div>
+    </button>
+    <div class="dropdown-content">
+        <a href="services.html">Main Services</a>
+        <a href="#">Reception</a>
+        <a href="#">Temple Missionary</a>
+    </div>
+  </div></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+
+<main class="home">
+  <h1>Make a Reservation</h1>
+
+  <form class="reservation" method="get" action="../hotelfinal/thanks.html">
+    <fieldset class="first">
+        <legend> Reservation Details</legend>
+
+        <label class="top" required>Location
+            <select name="location">
+                <option value="" selected disabled>Select Location...</option>
+                <option value="bethesda">Bethesda, MD USA</option>
+                <option value="kingston">Kingston, Jamaica</option>
+                <option value="losangeles">Los Angeles, CA USA</option>
+                <option value="portland">Portland, OR USA</option>
+            </select>
+        </label>
+
+        <label class="top" id="arrive"> Arrival Date* <input type="date" name="completeDate" required></label>
+
+        <label class="top" id="depart"> Departure Date* <input type="date" name="completeDate" required></label>
+
+        <label class="top"> Number of Rooms* <input type="number" name="numrooms" placeholder="3" required> </label>
+
+        <label class="top" required>Type of Room
+            <select name="location">
+                <option value="" selected disabled>Select Room Type...</option>
+                <option value="bethesda">Standard (2 bed)</option>
+                <option value="kingston">Suite (3 bed)</option>
+                <option value="losangeles">Master Suite (4 bed)</option>
+            </select>
+            </label>
+    </fieldset>
+
+    <fieldset class="second">
+        <legend>Guest Information</legend>
+
+            <label class="top"> Full Name* <input type="text" name="fname" required> </label>
+
+            <label class="top"> Phone (Optional) <input type="tel" name="phone" placeholder="1235551234"> </label>
+
+            <label class="top"> Email*<input type="email" name="email" placeholder="someone@mail.com" required>
+            </label>
+
+            <label class="top"> Home State or Country (Optional) <input type="text" name="fname"> </label>
+
+            <div>Special Accommodations/Comments</div>
+            <textarea cols="36" rows="4"></textarea>
+        </fieldset>
+
+      <input type="submit" value="Make Reservation" class="submitBtn">
+
+    </form>
+
+</main>
+
+<footer class="info">
+    <h3>Address:</h3>
+        <p>Temple Inn & Suites<br>
+        4800 Montgomery Ln #300<br>
+        Bethesda, MD 20814
+        </p>
+
+    <h3 class="two">Phone:</h3>
+        <p class="two">(410) 000-9999
+        </p>
+
+    <h3 class="three">Email:</h3>
+        <p class="three">info@tis.org</p>
+</footer>
+
+<footer class="final">
+&copy; Cody Graham | 
+<span id="datetime"><script src="scripts/currentdate.js"></script>
+</span>
+</footer>
+</body>
+</html>
