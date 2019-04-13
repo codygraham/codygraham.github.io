@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="reservation confirmation" content="Thank-you note from competion of a reservation">
+<meta name="Cody Graham" content="See above">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<!-- This start file was build by Paul Cheney  -->
+<title>Thanks | Temple Inn & Suites</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+<!--Scripts-->
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<header class="wrap">
+        <figure>
+            <img src="images/logo.jpg" alt="Get Weather logo">
+        </figure>
+        <div>
+        <h1>Temple Inn & Suites</h1>
+        <h2>Find Your Roots and Build Your Branches</h2>
+        </div>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+<nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+    <ul id ="primaryNav" class="">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html">Temple</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li class="active"><div class="dropdown">
+                <button class="dropbtn">Services <div class="down"></div>
+                </button>
+                <div class="dropdown-content">
+                    <a href="services.html">Main Services</a>
+                    <a href="reception.html">Wedding Receptions</a>
+                    <a href="missionary.html">Temple Missionaries</a>
+            <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    
+    
+<!-- CONTENT HERE -->
+<main>
+    <h1>Submitted!</h1>
+        <p class="thanks">Thank you for contacting Temple Inn & Suites. We will be sure to respond to your questions, comments, concerns or suggestions within three business days.</p>
+        
+    </main>
+    
+<!-- FOOTER HERE -->   
+<footer class="info">
+        <h3>Address:</h3>
+            <p>Temple Inn & Suites<br>
+            4800 Montgomery Ln #300<br>
+            Bethesda, MD 20814
+            </p>
+    
+        <h3 class="two">Phone:</h3>
+            <p class="two">(410) 000-9999
+            </p>
+    
+        <h3 class="three">Email:</h3>
+            <p class="three">info@tis.org</p>
+    </footer>
+    
+    <footer class="final">
+    &copy; Cody Graham | 
+    <span id="datetime"><script src="scripts/currentdate.js"></script>
+    </span>
+    </footer>
+
+</body>
+</html>
