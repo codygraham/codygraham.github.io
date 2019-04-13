@@ -18,14 +18,37 @@
  }
 
  /*----------- Wedding Reception----------*/
-
-.receptionleft{
-    max-width: 50%;
+main#wedding.home {
+    display: flex;
+    margin-top: 20px;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.child img, h3 {width: 49%;}
+main#wedding.home h1 {
+    flex-basis: 100%;
+    align-items: start;
+    justify-content: center;
+}
 
-.child2 {float: right;}
+.receptionleft {
+    flex-basis: 48%;
+}
+.receptionright {flex-basis: 48%;}
+.receptionright h2 {margin-left: 15%;}
+
+.bronze, .silver, .gold {font-size: 100%;}
+
+.child img, h3 {width: 100%;}
+
+.receptionright h2 {flex-basis: 100%;}
+
+.bronze, .silver, .gold {
+flex-basis: 60%;
+margin-left: 0;
+margin-right: 0;
+}
 
 /*----------Contact Flexbox----------*/
 
@@ -38,6 +61,4 @@
     .map iframe {
         height: 500px;
     }
-
-    
     } /* end of media query*/
