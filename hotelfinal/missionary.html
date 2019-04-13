@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="description" content="Find your stay nearby the LDS temple of your choice. ">
 <meta name="CG" content="Cody Graham">
-<title>Temple Missionary | Temple Inn & Suites</title>
+<title>Temple Missionaries | Temple Inn & Suites</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 <!-- STYLE SHEETS -->
@@ -52,30 +52,65 @@
 
 
 <main class="home">
-  <h1>Home</h1>
-
-  <figure class="hero"></figure>
-
-  <p class="intro">The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. The owner-operated company caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by the company.</p>
+  <h1>Hotel Suite Options</h1>
 
   <div class="flexbox">
-    <section class="subhome">
-      <h2>Temple of the Week</h2>
-      <h4>Portland, Oregon Temple</h4>
+      <section class="subhome" id="sh">
+        <h2>Standard Room</h2>
+  
+          <img class="temple" src="images/standard.jpg">
+  
+          <article class="summary">
+              <ul>
+                <li>Two beds / One bath</li>
+                <li>600 square feet</li>
+                <li>$89 / night</li>
+          </ul>
+          </article>
+      </section>
+  
+      <section class="subhome" id="sh">
+        <h2>Normal Suite</h2>
+  
+          <img class="temple" src="images/suite.jpg">
+        
+          <article class="summary">
+            <ul>
+              <li>Three beds / Two baths</li>
+              <li>700 square feet</li>
+              <li>$149 / night</li>
+            </ul>
+          </article>
+      </section>
+    </div>
 
-        <img class="temple" src="images/portlandtemple.jpg">
+    <div class="flexbox">
+      <section class="subhome" id="sh">
+        <h2>Master Suite</h2>
+          <img class="temple" src="images/master.jpg">
+          <article class="summary">
+            <ul>
+              <li>Four beds / Two baths</li>
+              <li>800 square feet</li>
+              <li>$189 / night</li>
+            </ul>
+          </article>
+      </section>
 
-        <article class="summary">
-          <p>Rising elegantly among towering Douglas-fir trees, the six spires of the marble-clad Portland Oregon Temple create a beautiful sight for motorists traveling Oregon's I-5, situated about 8 miles south of downtown Portland in Lake Oswego. On the east side of the temple is a serene reflection pool sitting at the base of the main spire. A fountain on the west side replenishes an infinity pool.</p>
-        </article>
-    </section>
-
-    <section class="reservelink">
-        <form method="get" action="../hotelfinal/reservation.html">
-            <input type="submit" value="Make a Reservation" class="right">
-        </form>
-    </section>
-  </div>
+      <form class="contactus" id="sh" method="get" action="../hotelfinal/thanks2.html">
+          <fieldset class="second">
+            <legend>Contact Us</legend>
+    
+              <label class="top"> Full Name <input type="text" name="fname"> </label>
+              <label class="top"> Phone <input type="tel" name="phone" placeholder="1235551234"> </label>
+              <label class="top"> Email<input type="email" name="email" placeholder="someone@mail.com" ></label>
+              <div>Message</div>
+              <textarea cols="32" rows="4" required></textarea>
+          </fieldset>
+      
+            <input type="submit" value="Submit" class="submitBtn">
+      </form>
+      </div>
 
 </main>
 
